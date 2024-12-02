@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belezas Naturais da Nova Zelândia - Introdução</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="botons">
+                <h1>Belezas Naturais da Nova Zelândia</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paisagens.html">Paisagens</a></li>
+                <li><a href="info.html">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="secao-principal">
+        <div class="secao-principal-texto">
+            <h6>Descubra as Belezas Naturais da Nova Zelândia</h6>
+            <p class="centralizado">Descubra as Belezas Naturais da Nova Zelândia
+                Mergulhe em um mundo de paisagens deslumbrantes, onde as montanhas majestosas se erguem imponentes, e os lagos cristalinos refletem a beleza ao redor. 
+                A Nova Zelândia é um verdadeiro paraíso para os amantes da natureza, oferecendo uma diversidade impressionante de cenários.
+                À direita, você pode ver a icônica paisagem de Milford Sound, um dos destinos mais deslumbrantes do país. Com suas impressionantes montanhas cobertas de vegetação exuberante e cascatas que despencam em águas tranquilas, Milford Sound é um testemunho da beleza natural da Nova Zelândia. Este fiorde, cercado por picos majestosos, convida você a explorar suas trilhas e experimentar momentos inesquecíveis em meio à natureza selvagem.
+                Explore florestas encantadoras que abrigam uma rica fauna e flora, sinta a brisa fresca dos lagos e descubra os segredos que cada canto dessa terra mágica tem a oferecer.
+                Prepare-se para uma jornada que vai além da vista — uma verdadeira conexão com a essência do mundo natural.
+            </p>
+        </div>
+        <div class="secao-principal-imagem">
+            <img src="img/milfordpaisagen.jpg" alt="Paisagem da Nova Zelândia" width="800px">
+        </div>
+    </main>
+
+    <section class="sub-question">
+        <h2>Por que a Nova Zelândia?</h2>
+        <p>A Nova Zelândia é famosa por sua diversidade ecológica e paisagens deslumbrantes, atraindo turistas do mundo todo. Montanhas imponentes, praias paradisíacas e lagos cristalinos compõem cenários espetaculares. Para os amantes da natureza e da aventura, o país oferece trilhas, florestas e uma rica biodiversidade, além de atividades como caminhadas e esportes ao ar livre. O compromisso com a conservação ambiental faz da Nova Zelândia um destino autêntico e preservado, onde é possível se conectar profundamente com a natureza.</p>
+    </section>
+
+    <div class="texto-expandido">
+        <button id="btnMostrar" class="btn-toggle">Mostrar mais informações</button>
+        <p id="textoOculto" style="display:none;">
+            Explore florestas encantadoras que abrigam uma rica fauna e flora, sinta a brisa fresca dos lagos e descubra os segredos que cada canto dessa terra mágica tem a oferecer.
+            Prepare-se para uma jornada que vai além da vista — uma verdadeira conexão com a essência do mundo natural.
+        </p>
+    </div>
+
+    <section class="galeria-imagens">
+        <div class="imagem-container">
+            <img src="img/mountcook.jpg" alt="Paisagem 1" class="imagem-thumbnail" onclick="abrirModal(this)">
+            <img src="img/laketajapo2.jpg" alt="Paisagem 2" class="imagem-thumbnail" onclick="abrirModal(this)">
+            <img src="img/rotorua2.jpg" alt="Paisagem 3" class="imagem-thumbnail" onclick="abrirModal(this)">
+            <img src="img/waitomocaves.jpg" alt="Paisagem 4" class="imagem-thumbnail" onclick="abrirModal(this)">
+        </div>
+    </section>
+
+    <div id="modalImagem" class="modal">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <img class="modal-conteudo" id="imgModal">
+    </div>
+
+    <section class="videos">
+        <div class="videos-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ArgFd1p5Mnw?si=Goj2cPeLMkCWQG5G&amp;controls=0&amp;start=21428" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PufYPoR32LQ?si=FenYX8gJdjCpEUWB&amp;controls=0&amp;start=815" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y7exA8-TCY?si=ZysSeCeKD2KZKxAd&amp;controls=0&amp;start=7048" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="formulario-feedback">
+        <h2>Deixe seu feedback</h2>
+        <form id="formFeedback" onsubmit="return validarFormulario()">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" required></textarea><br><br>
+
+            <input type="submit" value="Enviar Feedback">
+        </form>
+        <p id="mensagemFeedback" style="color: rgb(255, 255, 255);"></p>
+    </section>
+
+    <footer>
+        <div>
+            <p>© 2024 Júlio César e Kalil Rocha</p>
+        </div>
+    </footer>
+
+    <script src="/js/web.js"></script>
+</body>
+</html>

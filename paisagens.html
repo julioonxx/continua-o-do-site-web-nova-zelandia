@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paisagens</title>
+    <link rel="stylesheet" href="/css/styles.css">
+
+</head>
+<body class="paisagens">
+    <header>
+        <nav class="navbar">
+            <div class="botons">
+                <h1>Paisagens da Nova Zelândia</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="paisagens.html">Paisagens</a></li>
+                <li><a href="info.html">Informações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="secao-paisagens">
+        <div class="paisagem">
+            <img src="img/milford2.jpg" alt="Milford Sound" width="600px">
+            <button onclick="toggleDescription('desc-milford')">Mostrar Descrição</button>
+            <p id="desc-milford" style="display:none;">
+                <strong>Milford Sound:</strong> Localizado no Parque Nacional de Fiordland, Milford Sound é uma das atrações mais icônicas da Nova Zelândia. O fiorde é conhecido por seus penhascos dramáticos que se elevam a mais de 1.200 metros acima do mar, cercados por florestas exuberantes e cachoeiras deslumbrantes como a Stirling e Lady Bowen. Os cruzeiros diários permitem que os visitantes experimentem de perto essa maravilha natural, com chances de avistar focas, golfinhos e até pinguins. A beleza surreal de Milford Sound é ainda mais impressionante em dias chuvosos, quando inúmeras cachoeiras descem das montanhas.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/rotorua2.jpg" alt="Rotorua" width="600px">
+            <button onclick="toggleDescription('desc-rotorua')">Mostrar Descrição</button>
+            <p id="desc-rotorua" style="display:none;">
+                <strong>Rotorua:</strong> Famosa por sua atividade geotérmica e rica cultura Maori, Rotorua é um destino único. Gêiseres como o Pohutu Geyser lançam colunas de vapor e água quente a alturas impressionantes, enquanto as piscinas de lama borbulhante e as fontes termais oferecem uma experiência natural fascinante. Além disso, Rotorua é um dos melhores lugares para aprender sobre a cultura Maori, com aldeias tradicionais, performances culturais e o banquete Hangi, preparado em fornos subterrâneos. O cheiro de enxofre no ar pode ser forte, mas faz parte da autêntica experiência geotérmica que a cidade oferece.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/mountcook.jpg" alt="Aoraki / Mount Cook" width="600px">
+            <button onclick="toggleDescription('desc-mountcook')">Mostrar Descrição</button>
+            <p id="desc-mountcook" style="display:none;">
+                <strong>Aoraki / Mount Cook:</strong> Aoraki, também conhecido como Mount Cook, é o pico mais alto da Nova Zelândia, com 3.724 metros. O Parque Nacional Aoraki / Mount Cook oferece algumas das paisagens alpinas mais dramáticas do país, com trilhas que passam por glaciares e lagos de um azul profundo. A trilha Hooker Valley é uma das mais populares, levando os caminhantes por pontes suspensas até o Lago Hooker, onde blocos de gelo flutuam nas águas glaciais. O parque também é um excelente lugar para observar as estrelas, já que está localizado dentro de uma reserva de céu escuro, oferecendo vistas cristalinas do cosmos.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/whararikibeach.jpeg" alt="Wharariki Beach" width="600px">
+            <button onclick="toggleDescription('desc-wharariki')">Mostrar Descrição</button>
+            <p id="desc-wharariki" style="display:none;">
+                <strong>Wharariki Beach:</strong> é uma das praias mais isoladas e deslumbrantes da Nova Zelândia, localizada na região de Nelson, na Ilha Sul. Acessível por uma trilha de 30 minutos, a praia é famosa por suas impressionantes formações rochosas, areias douradas e amplas dunas. É um ótimo local para observar a vida selvagem, como focas e pinguins, e oferece vistas espetaculares, especialmente durante o pôr do sol. Com seu ambiente sereno, Wharariki Beach é ideal para relaxar, explorar a natureza e desfrutar de um cenário natural inigualável. É também um local de importância cultural para os Māori, que a consideram sagrada.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/tongariro1.jpg" alt="Tongariro National Park" width="600px">
+            <button onclick="toggleDescription('desc-tongariro')">Mostrar Descrição</button>
+            <p id="desc-tongariro" style="display:none;">
+                <strong>Tongariro National Park:</strong> Patrimônio Mundial da UNESCO, o Parque Nacional de Tongariro é famoso pela travessia de Tongariro, uma das trilhas mais espetaculares da Nova Zelândia. O caminho passa por vulcões ativos, como o Monte Ngauruhoe (conhecido como a Montanha da Perdição em “O Senhor dos Anéis”), e lagos vulcânicos de cores vibrantes, como o Emerald Lake e o Blue Lake. O parque também é um local sagrado para os Maori, que veem o Monte Tongariro como uma entidade espiritual. Além das trilhas vulcânicas, o parque oferece esqui no inverno e caminhadas pela floresta alpina no verão.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/bayofislands2.png" alt="Bay of Islands" width="600px">
+            <button onclick="toggleDescription('desc-bayofislands')">Mostrar Descrição</button>
+            <p id="desc-bayofislands" style="display:none;">
+                <strong>Bay of Islands:</strong> Com mais de 140 ilhas subtropicais, a Baía das Ilhas é um paraíso para quem ama o mar. As águas cristalinas da baía são ideais para navegação, mergulho e caiaque, enquanto os visitantes podem explorar praias isoladas, enseadas e ilhas exuberantes. Uma das atividades mais populares é o avistamento de golfinhos, com vários passeios de barco que permitem nadar com esses animais em seu habitat natural. Além das atividades aquáticas, a região tem importância histórica, pois foi o local de assinatura do Tratado de Waitangi, o documento fundador da Nova Zelândia.
+            </p>
+        </div>
+
+        <div class="paisagem">
+            <img src="img/glaciar-franz-josef.jpg" alt="Franz Josef e Fox Glaciers" width="600px">
+            <button onclick="toggleDescription('desc-franzjosef')">Mostrar Descrição</button>
+            <p id="desc-franzjosef" style="display:none;">
+                <strong>Franz Josef e Fox Glaciers:</strong> Localizados na Costa Oeste da Ilha Sul, os glaciares Franz Josef e Fox oferecem uma experiência glaciar única. Ao contrário de muitos outros glaciares do mundo, estes se encontram a uma curta distância da floresta tropical, criando um contraste impressionante entre o verde exuberante e o gelo azul. Os visitantes podem caminhar até a face dos glaciares ou fazer passeios de helicóptero para explorar cavernas de gelo e formações glaciais deslumbrantes. O derretimento dos glaciares, no entanto, está sendo acelerado pelas mudanças climáticas
+
+    <script src="/js/web.js"></script>
+
+ </body>
+</html>
+

@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313739;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+    text-shadow: 2px 2px 4px black;
+}
+
+.navbar {
+    background-color: rgb(39, 38, 38);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+}
+
+h6{
+    margin-top: 100px;
+    font-size: 3em;
+    margin-left: 100px;
+}
+
+.navbar .botons {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+}
+
+.nav-links a:hover {
+    border-bottom: 2px solid white;
+}
+
+.secao-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    padding: 50px 20px;
+    background-size: cover;
+    background-color: #313739;
+    color: white;
+    font-size: 0.6em;
+}
+
+.secao-principal-imagem {
+    padding-left: 5px;
+}
+
+.secao-principal-texto h1 {
+    font-size: 4em;
+    margin: 10px;
+    max-width: 900px;
+}
+
+.centralizado {
+    text-align: center;
+    margin: 40px;
+    max-width: 800px;
+    line-height: 1.5;
+    font-size: 2em;
+}
+
+.sub-question {
+    padding-left: 15px;
+    font-weight: 600;
+}
+
+.videos-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.videos iframe {
+    margin: 10px;
+}
+
+body.paisagens {
+    background-image: url('img/back3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.secao-paisagens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #000000b2;
+    background-size: cover;
+}
+
+.paisagem {
+    margin-bottom: 5px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.paisagem img {
+    border: 4px solid white;
+    box-shadow: 2px 2px 10px black;
+    margin-bottom: 20px;
+}
+
+.paisagem p {
+    font-size: 1.2em;
+    color: white;
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+body.informaçoes { 
+    background-image: url('img/newzeland4k.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+}
+
+.info {
+    background-color: #000000bd;
+    background-size: cover;
+    color: rgba(221, 218, 218, 0.945);
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.info ul {
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.conteudo{
+    padding:120px;
+    background-color: #000000bd;
+    background-size: cover;
+    color: rgba(221, 218, 218, 0.945);
+    text-align: left;
+    display: flex;
+    align-items: left;
+    color: white;
+    font-size: 1.1em;
+}
+
+.text3{
+    margin-left: 0px;
+    margin-right: 40px;
+    margin-top: 30px;
+}
+
+.mapa {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #bbb;
+}
+
+.formulario-feedback {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.formulario-feedback input, .formulario-feedback textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #fff;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1em;
+    border-radius: 5px;
+}
+
+.formulario-feedback input[type="submit"] {
+    background-color: #000000;
+    border: none;
+    cursor: pointer;
+}
+
+.formulario-feedback input[type="submit"]:hover {
+    background-color: #000000;
+}
+
+
+.btn-toggle {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.btn-toggle:hover {
+    background-color: #0202027a;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+ font-size: 16px;
+}
+
+button:hover {
+background-color: #0000007c;
+}
+
+p {
+text-align: justify;
+font-size: 16px;
+}
+ 
+.galeria-imagens {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.imagem-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.imagem-thumbnail {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 3px solid #fff;
+    transition: transform 0.3s ease;
+}
+
+.imagem-thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-conteudo {
+    max-width: 80%;
+    max-height: 80%;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.fechar:hover,
+.fechar:focus {
+    color: #bbb;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0000007c;
+}
+
+p {
+    text-align: justify;
+    font-size: 16px;
+}
